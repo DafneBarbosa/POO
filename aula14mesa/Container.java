@@ -18,10 +18,10 @@ public class Container implements Comparable<Container>{
     public int compareTo(Container o) {
         if(o.numero == this.numero){
             return 0;
-        } else if(o.numero < this.numero){
-            return 1;
-        } else {
+        } else if(this.numero < o.numero){
             return -1;
+        } else {
+            return 1;
         }
     }
 
